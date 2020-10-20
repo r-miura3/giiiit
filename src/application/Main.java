@@ -1,16 +1,17 @@
 package application;
-	
+
+import java.util.ArrayList;
 //import java.awt.Label;
 import java.util.List;
-import java.util.ArrayList;
+
 import javafx.application.Application;
-import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
 
 public class Main extends Application {
-	
+
 	protected static List<DrinkInfo> drinkList;
 	static DrinkInfo coffee;
 	static DrinkInfo sportsdrink;
@@ -18,7 +19,7 @@ public class Main extends Application {
 	static DrinkInfo tea;
 	static DrinkInfo water;
 	static DrinkInfo energedrink;
-	
+
 	@Override
 	public void start(Stage Stage) {
 		try {
@@ -31,6 +32,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
+	//////////iiiiiiiiiiiiiiiiiiiiiiiiiiiii
 	//33
 	//44
 	//55
@@ -43,16 +45,16 @@ public class Main extends Application {
 		tea = new DrinkInfo("tea",110,10);
 		water = new DrinkInfo("water",130,10);
 		energedrink = new DrinkInfo("energedrink",140,10);
-		
+
 		drinkList = new ArrayList<DrinkInfo>();
-		
+
 		drinkList.add(coffee);
 		drinkList.add(sportsdrink);
 		drinkList.add(cora);
 		drinkList.add(tea);
 		drinkList.add(water);
 		drinkList.add(energedrink);
-		
-		launch(args);	
+
+		launch(args);
 	}
 }
